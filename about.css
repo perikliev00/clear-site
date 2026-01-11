@@ -18,13 +18,18 @@
 }
 
 *{box-sizing:border-box}
-html,body{height:100%}
+html{
+  height:100%;
+  overflow-x:hidden;
+}
 body{
+  min-height:100%;
   margin:0;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
   color:var(--text);
   background:var(--bg);
   line-height:1.45;
+  overflow-x:hidden;
   padding-bottom:calc(96px + env(safe-area-inset-bottom));
 }
 
@@ -197,7 +202,7 @@ a{color:inherit}
   transform:translateY(-4px);
   pointer-events:none;
   transition:opacity .15s ease, transform .15s ease, visibility .15s ease;
-  z-index:60;
+  z-index:1000;
 }
 .lang-menu::after{
   content:"";
@@ -903,6 +908,15 @@ a{color:inherit}
     -webkit-hyphens: none !important;
     -moz-hyphens: none !important;
     -ms-hyphens: none !important;
+  }
+
+  .lang-menu__list{
+    right:auto;
+    left:0;
+    transform:translateY(-4px);
+  }
+  .lang-menu[data-open="true"] .lang-menu__list{
+    transform:translateY(0);
   }
 
   /* Override any aggressive word-breaking that might exist */
