@@ -27,7 +27,6 @@ body{
   background:var(--bg);
   line-height:1.45;
   overflow-x:hidden;
-  padding-bottom:calc(96px + env(safe-area-inset-bottom));
 }
 
 /* ===== GLOBAL: Prevent mid-word breaking for ALL headings (ALL SCREENS) ===== */
@@ -1111,7 +1110,7 @@ a{color:inherit}
 }
 
 @media (max-width: 520px){
-  .site-footer{padding:54px 0 130px}
+  .site-footer{padding:54px 0 68px}
   .footer__grid{grid-template-columns: 1fr}
 }
 
