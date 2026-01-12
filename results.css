@@ -607,75 +607,22 @@ a{color:inherit}
   box-shadow:0 8px 24px rgba(0,0,0,.15);
   background:#f5f5f5;
 }
-.results-why__video-image{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  border-radius:8px;
-}
-.results-why__video-play{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
-  pointer-events:none;
-  transition:transform 0.2s ease;
-}
-.results-why__video-link:hover .results-why__video-play{
-  transform:translate(-50%, -50%) scale(1.1);
-}
-
-/* Testimonial Section */
-.results-testimonial{
-  padding:80px 0;
-  background:#0aa0ff;
-  color:#fff;
-}
-.results-testimonial__inner{
-  display:grid;
-  grid-template-columns: auto 1fr;
-  gap:40px;
-  align-items:center;
-}
-.results-testimonial__logo-circle{
-  width:120px;
-  height:120px;
-  border-radius:50%;
-  background:#fff;
+/* Results "Why" section visual (SVG replacement) */
+.results-why__viz{
   display:flex;
   align-items:center;
   justify-content:center;
-  flex-shrink:0;
+  background:linear-gradient(135deg, rgba(0,195,179,.18), rgba(10,160,255,.18), rgba(255,59,111,.18));
 }
-.results-testimonial__logo-text{
-  font-size:18px;
-  font-weight:800;
-  color:#0aa0ff;
-}
-.results-testimonial__quote{
-  font-size:24px;
-  line-height:1.5;
-  margin:0 0 20px;
-  font-style:normal;
-}
-.results-testimonial__author{
+.results-why__viz svg{
+  position:absolute;
+  inset:18px;
+  width:calc(100% - 36px);
+  height:calc(100% - 36px);
   display:block;
-  font-style:normal;
 }
-.results-testimonial__author-name{
-  display:block;
-  font-weight:700;
-  font-size:16px;
-  margin-bottom:4px;
-}
-.results-testimonial__author-title{
-  display:block;
-  font-size:14px;
-  opacity:0.9;
-}
+
+/* (testimonial/proof section removed) */
 
 /* Why Choose Section */
 .results-choose{
@@ -900,7 +847,6 @@ a{color:inherit}
     justify-content:center;
   }
   .results-why,
-  .results-testimonial,
   .results-choose,
   .results-cta,
   .results-explained{
@@ -913,17 +859,6 @@ a{color:inherit}
   }
   .results-cta__title{
     font-size:28px;
-  }
-  .results-testimonial__inner{
-    grid-template-columns: 1fr;
-    gap:24px;
-    text-align:center;
-  }
-  .results-testimonial__logo-circle{
-    margin:0 auto;
-  }
-  .results-testimonial__quote{
-    font-size:20px;
   }
   .results-choose__item-title{
     font-size:20px;
@@ -949,6 +884,20 @@ a{color:inherit}
     overflow-wrap: break-word !important;
   }
 }
+
+/* Scroll-triggered animations */
+@keyframes revealUp{
+  from{ opacity:0; transform:translateY(30px); }
+  to{ opacity:1; transform:translateY(0); }
+}
+/* Initial hidden state */
+[data-animate] { opacity: 0; }
+[data-animate].animate-in { animation-fill-mode: forwards; }
+/* Fade-up variant (keep existing fadeInUp for hero title spans; use revealUp here) */
+[data-animate="fade-up"].animate-in{ animation: revealUp 0.6s ease-out forwards; }
+[data-delay="100"].animate-in { animation-delay: 0.1s; }
+[data-delay="200"].animate-in { animation-delay: 0.2s; }
+[data-delay="300"].animate-in { animation-delay: 0.3s; }
 
 /* ===== Global: Natural word wrapping - no hyphens, no mid-word breaking (ALL SCREENS) ===== */
 /* Apply to all text elements globally */

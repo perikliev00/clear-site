@@ -211,10 +211,11 @@
             "I set up the essentials: clean markup, sensible headings, fast assets, and basic tracking. If you need ongoing improvements, maintenance can cover updates, backups, and performance checks.",
         },
         testimonial: {
-          badge: "Client",
-          quote: "Clear scope, fast communication, and small iterations. The end result is easier to navigate and loads faster.",
-          author: "Anonymous client",
-          title: "Feedback (anonymized)",
+          badge: "Case Study",
+          quote:
+            "A conversion-focused redesign with faster load times and clearer structure—resulting in more qualified inquiries.",
+          author: "ClearSite Client — Booking Business",
+          title: "Project highlight",
         },
         choose: {
           title: "What you get",
@@ -573,9 +574,11 @@
           text2: "Un site web axé sur les résultats fournit une infrastructure en ligne fiable et sécurisée pour vous permettre de gérer les éléments critiques de votre présence numérique. Un design axé sur les résultats offre à votre entreprise des niveaux maximum de flexibilité et de contrôle pour soutenir un potentiel de croissance pratiquement illimité – à un moment et à un rythme qui vous convient.",
         },
         testimonial: {
-          quote: "Livrer un projet comme celui-ci en six semaines était extrêmement rapide – le plus rapide que nous ayons jamais réalisé. Ce n'était possible que grâce à la volonté et à l'efficacité des équipes des deux côtés.",
-          author: "Jean Dupont",
-          title: "PDG, Nom de l'entreprise",
+          badge: "Étude de cas",
+          quote:
+            "Refonte orientée conversion avec de meilleures performances et une structure plus claire — plus de demandes qualifiées.",
+          author: "Client ClearSite — Réservations",
+          title: "Extrait du projet",
         },
         choose: {
           title: "Pourquoi choisir les Résultats ClearSite?",
@@ -874,10 +877,11 @@
             "Изграждам основите: семантичен HTML, правилни заглавия, оптимизирани ресурси и базово проследяване. При нужда поддръжката покрива актуализации, резервни копия и периодични проверки на производителността.",
         },
         testimonial: {
-          badge: "Клиент",
-          quote: "Ясен обхват, бърза комуникация и работа на малки итерации. Крайният резултат е по-лесен за навигация и се зарежда по-бързо.",
-          author: "Анонимен клиент",
-          title: "Обратна връзка (анонимизирана)",
+          badge: "Кейс",
+          quote:
+            "Редизайн с фокус върху конверсиите, по-бързо зареждане и по-ясна структура — резултатът е повече качествени запитвания.",
+          author: "Клиент на ClearSite — Резервации",
+          title: "Акцент от проекта",
         },
         choose: {
           title: "Какво получавате",
@@ -1167,9 +1171,11 @@
           text2: "Eine ergebnisorientierte Website bietet zuverlässige und sichere Online-Infrastruktur, um Ihnen zu ermöglichen, kritische Elemente Ihrer digitalen Präsenz zu verwalten. Ergebnisorientiertes Design bietet Ihrem Unternehmen maximale Flexibilität und Kontrolle, um praktisch unbegrenztes Wachstumspotenzial zu unterstützen – zu einem Zeitpunkt und Tempo, das zu Ihnen passt.",
         },
         testimonial: {
-          quote: "Die Lieferung eines Projekts wie diesem in sechs Wochen war extrem schnell – das schnellste, das wir je erreicht haben. Es war nur möglich aufgrund der Bereitschaft und Effektivität der Teams von beiden Seiten.",
-          author: "Hans Müller",
-          title: "Geschäftsführer, Firmenname",
+          badge: "Fallstudie",
+          quote:
+            "Conversion-orientiertes Redesign mit schnellerer Ladezeit und klarerer Struktur — mehr qualifizierte Anfragen.",
+          author: "ClearSite-Kunde — Buchungen",
+          title: "Projekt-Highlight",
         },
         choose: {
           title: "Warum ClearSite Ergebnisse wählen?",
@@ -1459,9 +1465,11 @@
           text2: "Una web orientada a resultados proporciona infraestructura online confiable y segura para permitirte gestionar elementos críticos de tu presencia digital. El diseño orientado a resultados proporciona a tu negocio niveles máximos de flexibilidad y control para apoyar un potencial de crecimiento prácticamente ilimitado – en un momento y ritmo que te convenga.",
         },
         testimonial: {
-          quote: "Entregar un proyecto como este en seis semanas fue extremadamente rápido – el más rápido que hemos logrado. Solo fue posible gracias a la disposición y efectividad de los equipos de ambos lados.",
-          author: "Juan García",
-          title: "CEO, Nombre de la empresa",
+          badge: "Caso de estudio",
+          quote:
+            "Rediseño enfocado en conversión con mejor rendimiento y estructura más clara—más consultas cualificadas.",
+          author: "Cliente de ClearSite — Reservas",
+          title: "Destacado del proyecto",
         },
         choose: {
           title: "¿Por qué elegir Resultados ClearSite?",
@@ -1751,9 +1759,11 @@
           text2: "Un sito orientato ai risultati fornisce un'infrastruttura online affidabile e sicura per consentirti di gestire elementi critici della tua presenza digitale. Il design orientato ai risultati fornisce alla tua azienda livelli massimi di flessibilità e controllo per supportare un potenziale di crescita praticamente illimitato – in un momento e ritmo adatti a te.",
         },
         testimonial: {
-          quote: "Consegnare un progetto come questo in sei settimane è stato estremamente veloce – il più veloce che abbiamo mai raggiunto. È stato possibile solo grazie alla disponibilità e all'efficacia dei team da entrambe le parti.",
-          author: "Marco Rossi",
-          title: "Amministratore Delegato, Nome azienda",
+          badge: "Caso studio",
+          quote:
+            "Restyling orientato alla conversione con caricamento più rapido e struttura più chiara—più richieste qualificate.",
+          author: "Cliente ClearSite — Prenotazioni",
+          title: "Highlight del progetto",
         },
         choose: {
           title: "Perché scegliere Risultati ClearSite?",
@@ -2043,9 +2053,11 @@
           text2: "結果重視のWebサイトは、信頼性が高く安全なオンラインインフラストラクチャを提供し、デジタルプレゼンスの重要な要素を管理できるようにします。結果重視のデザインは、実質的に無制限の成長ポテンシャルをサポートするために、ビジネスに最大レベルの柔軟性とコントロールを提供します – あなたに合った時期とペースで。",
         },
         testimonial: {
-          quote: "このようなプロジェクトを6週間で納品することは非常に速い – これまでに達成した中で最も速い。両側のチームの意欲と有効性のおかげでのみ可能でした。",
-          author: "田中太郎",
-          title: "代表取締役、会社名",
+          badge: "事例",
+          quote:
+            "コンバージョン重視の改善で表示速度と構造を最適化し、質の高い問い合わせが増えました。",
+          author: "ClearSiteクライアント（予約業）",
+          title: "プロジェクトハイライト",
         },
         choose: {
           title: "なぜClearSite実績を選ぶのか？",
