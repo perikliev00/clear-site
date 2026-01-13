@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цени - ClearSite BARBER SHOP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/pricing.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p class="loading-text">Зареждане...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <img src="/assets/logo.png" alt="Barber Shop Elite" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="logo-text" style="display:none;">Barber Shop Elite</span>
+                </a>
+                <nav class="nav">
+                    <a href="/" class="nav-link" data-page="index">НАЧАЛО</a>
+                    <div class="nav-dropdown">
+                        <a href="/pricing/" class="nav-link" data-page="pricing">ЦЕНИ</a>
+                        <div class="nav-dropdown-menu">
+                            <a href="/pricing/#podstrigvane" class="nav-dropdown-item">ПОДСТРИГВАНЕ</a>
+                            <a href="/pricing/#brada-brsnene" class="nav-dropdown-item">БРАДА & БРЪСНЕНЕ</a>
+                            <a href="/pricing/#grija" class="nav-dropdown-item">ГРИЖА</a>
+                            <a href="/pricing/#ekstri" class="nav-dropdown-item">ЕКСТРИ</a>
+                        </div>
+                    </div>
+                    <a href="/portfolio/" class="nav-link" data-page="portfolio">ГАЛЕРИЯ</a>
+                    <a href="/contacts/" class="nav-link" data-page="contacts">КОНТАКТИ</a>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pricing Section - Haircut -->
+    <section class="pricing-section" id="podstrigvane">
+        <div class="container">
+            <div class="pricing-header">
+                <h1 class="pricing-title">
+                    <span class="pricing-title-bg">clearsite</span>
+                    <span class="pricing-title-text">ПОДСТРИГВАНЕ</span>
+                </h1>
+            </div>
+
+            <div class="pricing-search-wrapper">
+                <div class="pricing-search">
+                    <input type="text" placeholder="Търси услуга" id="pricingSearch" class="search-input">
+                    <button class="search-button" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 19L13 13M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="pricing-table-wrapper">
+                <table class="pricing-table" id="haircutTable">
+                    <thead>
+                        <tr>
+                            <th class="col-service">Услуга</th>
+                            <th class="col-price">Фризьор</th>
+                            <th class="col-price">Старши Фризьор</th>
+                            <th class="col-price">Арт Директор</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Мъжко подстригване (класическо)</td>
+                            <td>35 лв. / 17.90 €</td>
+                            <td>45 лв. / 23.01 €</td>
+                            <td>55 лв. / 28.12 €</td>
+                        </tr>
+                        <tr>
+                            <td>Мъжко подстригване (Skin Fade)</td>
+                            <td>40 лв. / 20.45 €</td>
+                            <td>50 лв. / 25.56 €</td>
+                            <td>60 лв. / 30.68 €</td>
+                        </tr>
+                        <tr>
+                            <td>Мъжко подстригване + измиване + стайлинг</td>
+                            <td>45 лв. / 23.01 €</td>
+                            <td>55 лв. / 28.12 €</td>
+                            <td>65 лв. / 33.23 €</td>
+                        </tr>
+                        <tr>
+                            <td>Машинка (един номер)</td>
+                            <td>20 лв. / 10.23 €</td>
+                            <td>25 лв. / 12.78 €</td>
+                            <td>30 лв. / 15.34 €</td>
+                        </tr>
+                        <tr>
+                            <td>Детско подстригване (до 12 г.)</td>
+                            <td>25 лв. / 12.78 €</td>
+                            <td>30 лв. / 15.34 €</td>
+                            <td>35 лв. / 17.90 €</td>
+                        </tr>
+                        <tr>
+                            <td>Подстригване – по-дълга коса</td>
+                            <td>45 лв. / 23.01 €</td>
+                            <td>55 лв. / 28.12 €</td>
+                            <td>65 лв. / 33.23 €</td>
+                        </tr>
+                        <tr>
+                            <td>Бръснене глава (машинка + контур)</td>
+                            <td>35 лв. / 17.90 €</td>
+                            <td>45 лв. / 23.01 €</td>
+                            <td>55 лв. / 28.12 €</td>
+                        </tr>
+                        <tr>
+                            <td>Контур / Neckline cleanup</td>
+                            <td>15 лв. / 7.67 €</td>
+                            <td>20 лв. / 10.23 €</td>
+                            <td>25 лв. / 12.78 €</td>
+                        </tr>
+                        <tr>
+                            <td>Оформяне вежди</td>
+                            <td>10 лв. / 5.11 €</td>
+                            <td>12 лв. / 6.14 €</td>
+                            <td>15 лв. / 7.67 €</td>
+                        </tr>
+                        <tr>
+                            <td>Измиване + стайлинг</td>
+                            <td>15 лв. / 7.67 €</td>
+                            <td>20 лв. / 10.23 €</td>
+                            <td>25 лв. / 12.78 €</td>
+                        </tr>
+                        <tr>
+                            <td>Стайлинг (помада/паста)</td>
+                            <td>10 лв. / 5.11 €</td>
+                            <td>12 лв. / 6.14 €</td>
+                            <td>15 лв. / 7.67 €</td>
+                        </tr>
+                        <tr>
+                            <td>Камуфлаж на бели коси</td>
+                            <td>25 лв. / 12.78 €</td>
+                            <td>35 лв. / 17.90 €</td>
+                            <td>45 лв. / 23.01 €</td>
+                        </tr>
+                        <tr>
+                            <td>Fade Refresh (15–20 мин)</td>
+                            <td>25 лв. / 12.78 €</td>
+                            <td>35 лв. / 17.90 €</td>
+                            <td>45 лв. / 23.01 €</td>
+                        </tr>
+                        <tr>
+                            <td>Подравняване на брада (машинка)</td>
+                            <td>15 лв. / 7.67 €</td>
+                            <td>20 лв. / 10.23 €</td>
+                            <td>25 лв. / 12.78 €</td>
+                        </tr>
+                        <tr>
+                            <td>VIP детайл (консултация + финиш)</td>
+                            <td>10 лв. / 5.11 €</td>
+                            <td>15 лв. / 7.67 €</td>
+                            <td>20 лв. / 10.23 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pricing-disclaimer">
+                <p>*Цените са изчислени по фиксирания курс 1 EUR = 1.95583 BGN.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section - Beard & Shaving -->
+    <section class="pricing-section" id="brada-brsnene">
+        <div class="container">
+            <div class="pricing-header">
+                <h1 class="pricing-title">
+                    <span class="pricing-title-bg">clearsite</span>
+                    <span class="pricing-title-text">БРАДА & БРЪСНЕНЕ</span>
+                </h1>
+            </div>
+
+            <div class="pricing-search-wrapper">
+                <div class="pricing-search">
+                    <input type="text" placeholder="Търси услуга" id="manicureSearch" class="search-input">
+                    <button class="search-button" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 19L13 13M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="pricing-table-wrapper">
+                <table class="pricing-table" id="manicureTable">
+                    <thead>
+                        <tr>
+                            <th class="col-service">Услуга</th>
+                            <th class="col-price">Бръснар</th>
+                            <th class="col-price">Старши бръснар</th>
+                            <th class="col-price">Майстор бръснар</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Класическо бръснене с бръснач</td>
+                            <td>35 лв. / 17.90 €</td>
+                            <td>45 лв. / 23.01 €</td>
+                            <td>55 лв. / 28.12 €</td>
+                        </tr>
+                        <tr>
+                            <td>Бръснене на брада</td>
+                            <td>25 лв. / 12.78 €</td>
+                            <td>30 лв. / 15.34 €</td>
+                            <td>35 лв. / 17.90 €</td>
+                        </tr>
+                        <tr>
+                            <td>Оформяне на брада (машинка)</td>
+                            <td>20 лв. / 10.23 €</td>
+                            <td>25 лв. / 12.78 €</td>
+                            <td>30 лв. / 15.34 €</td>
+                        </tr>
+                        <tr>
+                            <td>Оформяне на брада (нож)</td>
+                            <td>30 лв. / 15.34 €</td>
+                            <td>35 лв. / 17.90 €</td>
+                            <td>40 лв. / 20.45 €</td>
+                        </tr>
+                        <tr>
+                            <td>Hot towel shave</td>
+                            <td>40 лв. / 20.45 €</td>
+                            <td>50 лв. / 25.56 €</td>
+                            <td>60 лв. / 30.68 €</td>
+                        </tr>
+                        <tr>
+                            <td>Бръснене + масаж</td>
+                            <td>45 лв. / 23.01 €</td>
+                            <td>55 лв. / 28.12 €</td>
+                            <td>65 лв. / 33.23 €</td>
+                        </tr>
+                        <tr>
+                            <td>Оформяне вежди + брада</td>
+                            <td>25 лв. / 12.78 €</td>
+                            <td>30 лв. / 15.34 €</td>
+                            <td>35 лв. / 17.90 €</td>
+                        </tr>
+                        <tr>
+                            <td>Контур на брада</td>
+                            <td>15 лв. / 7.67 €</td>
+                            <td>20 лв. / 10.23 €</td>
+                            <td>25 лв. / 12.78 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pricing-disclaimer">
+                <p>*Цените са изчислени по фиксирания курс 1 EUR = 1.95583 BGN.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section - Care -->
+    <section class="pricing-section" id="grija">
+        <div class="container">
+            <div class="pricing-header">
+                <h1 class="pricing-title">
+                    <span class="pricing-title-bg">clearsite</span>
+                    <span class="pricing-title-text">ГРИЖА</span>
+                </h1>
+            </div>
+
+            <div class="pricing-search-wrapper">
+                <div class="pricing-search">
+                    <input type="text" placeholder="Търси услуга" id="therapiesSearch" class="search-input">
+                    <button class="search-button" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 19L13 13M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="pricing-table-wrapper">
+                <table class="pricing-table" id="therapiesTable">
+                    <thead>
+                        <tr>
+                            <th class="col-service">Услуга</th>
+                            <th class="col-price">Фризьор</th>
+                            <th class="col-price">Старши Фризьор</th>
+                            <th class="col-price">Арт Директор</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Масаж на скалпа</td>
+                            <td>25 лв. / 12.78 €</td>
+                            <td>30 лв. / 15.34 €</td>
+                            <td>35 лв. / 17.90 €</td>
+                        </tr>
+                        <tr>
+                            <td>Терапия за коса (маска)</td>
+                            <td>30 лв. / 15.34 €</td>
+                            <td>35 лв. / 17.90 €</td>
+                            <td>40 лв. / 20.45 €</td>
+                        </tr>
+                        <tr>
+                            <td>Измиване с професионални продукти</td>
+                            <td>20 лв. / 10.23 €</td>
+                            <td>25 лв. / 12.78 €</td>
+                            <td>30 лв. / 15.34 €</td>
+                        </tr>
+                        <tr>
+                            <td>Терапия за суха коса</td>
+                            <td>35 лв. / 17.90 €</td>
+                            <td>40 лв. / 20.45 €</td>
+                            <td>45 лв. / 23.01 €</td>
+                        </tr>
+                        <tr>
+                            <td>Терапия за омазняваща коса</td>
+                            <td>35 лв. / 17.90 €</td>
+                            <td>40 лв. / 20.45 €</td>
+                            <td>45 лв. / 23.01 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pricing-disclaimer">
+                <p>*Цените са изчислени по фиксирания курс 1 EUR = 1.95583 BGN.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section - Extras -->
+    <section class="pricing-section" id="ekstri">
+        <div class="container">
+            <div class="pricing-header">
+                <h1 class="pricing-title">
+                    <span class="pricing-title-bg">clearsite</span>
+                    <span class="pricing-title-text">ЕКСТРИ</span>
+                </h1>
+            </div>
+
+            <div class="pricing-search-wrapper">
+                <div class="pricing-search">
+                    <input type="text" placeholder="Търси услуга" id="facialSearch" class="search-input">
+                    <button class="search-button" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 19L13 13M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="pricing-table-wrapper">
+                <div class="pricing-list-simple" id="facialList">
+                    <div class="pricing-list-item">
+                        <span class="service-name">Hot towel treatment</span>
+                        <span class="service-price">25 лв. / 12.78 €</span>
+                    </div>
+                    <div class="pricing-list-item">
+                        <span class="service-name">Масаж на лице</span>
+                        <span class="service-price">30 лв. / 15.34 €</span>
+                    </div>
+                    <div class="pricing-list-item">
+                        <span class="service-name">Оформяне вежди</span>
+                        <span class="service-price">10 лв. / 5.11 €</span>
+                    </div>
+                    <div class="pricing-list-item">
+                        <span class="service-name">Оформяне вежди + брада</span>
+                        <span class="service-price">25 лв. / 12.78 €</span>
+                    </div>
+                    <div class="pricing-list-item">
+                        <span class="service-name">Масаж на скалпа</span>
+                        <span class="service-price">25 лв. / 12.78 €</span>
+                    </div>
+                    <div class="pricing-list-item">
+                        <span class="service-name">Терапия за коса</span>
+                        <span class="service-price">30 лв. / 15.34 €</span>
+                    </div>
+                    <div class="pricing-list-item">
+                        <span class="service-name">Измиване + стайлинг</span>
+                        <span class="service-price">15 лв. / 7.67 €</span>
+                    </div>
+                    <div class="pricing-list-item">
+                        <span class="service-name">Стайлинг (помада/паста)</span>
+                        <span class="service-price">10 лв. / 5.11 €</span>
+                    </div>
+                    <div class="pricing-list-item">
+                        <span class="service-name">VIP пакет (подстригване + бръснене + масаж)</span>
+                        <span class="service-price">80 лв. / 40.90 €</span>
+                    </div>
+                    <div class="pricing-list-item">
+                        <span class="service-name">Консултация за стил</span>
+                        <span class="service-price">20 лв. / 10.23 €</span>
+                    </div>
+                    <div class="pricing-list-item">
+                        <span class="service-name">Камуфлаж на бели коси</span>
+                        <span class="service-price">25 лв. / 12.78 €</span>
+                    </div>
+                    <div class="pricing-list-item">
+                        <span class="service-name">Fade Refresh (15–20 мин)</span>
+                        <span class="service-price">25 лв. / 12.78 €</span>
+                    </div>
+                    <div class="pricing-list-item">
+                        <span class="service-name">VIP детайл (консултация + финиш)</span>
+                        <span class="service-price">10 лв. / 5.11 €</span>
+                    </div>
+                    <div class="pricing-list-item">
+                        <span class="service-name">Детско подстригване (до 12 г.)</span>
+                        <span class="service-price">25 лв. / 12.78 €</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-disclaimer">
+                <p>*Цените са изчислени по фиксирания курс 1 EUR = 1.95583 BGN.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column footer-brand">
+                    <img src="/assets/logo.png" alt="ClearSite Barber" class="footer-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="footer-logo-text" style="display:none;">clearsite</span>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+                            <img src="/assets/icons/fb.svg" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                            <img src="/assets/icons/ig.svg" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column footer-contacts">
+                    <h3 class="footer-title">КОНТАКТИ</h3>
+                    <div class="footer-contact-item">
+                        <p><strong>ж.к. Братя Миладинови, ул. „Струма" 148-147</strong></p>
+                        <p><strong>8001 Бургас</strong></p>
+                        <p>EN: Br. Miladinovi District, Struma St. 148-147, 8001 Burgas</p>
+                        <p>clear.site.it@gmail.com</p>
+                        <p>+359 893 813 214</p>
+                    </div>
+                </div>
+                <div class="footer-column footer-hours">
+                    <h3 class="footer-title">РАБОТНО ВРЕМЕ</h3>
+                    <div class="footer-hours-list">
+                        <p>Понеделник – 09:00 - 20:30</p>
+                        <p>Вторник - 09:00 – 20:30</p>
+                        <p>Сряда - 09:00-20:30</p>
+                        <p>Четвъртък – 09:00 – 20:30</p>
+                        <p>Петък – 09:00 – 20:30</p>
+                        <p>Събота - 10:00-17:00</p>
+                    </div>
+                </div>
+                <div class="footer-column footer-map">
+                    <h3 class="footer-title">ВИЖ НА КАРТАТА</h3>
+                    <div class="footer-map-graphic">
+                        <a href="https://www.google.com/maps?q=42.504532,27.466861" target="_blank" rel="noopener noreferrer">
+                            <img src="/assets/world-map.png" alt="Map" onerror="this.style.display='none'; this.parentElement.innerHTML='🗺️';">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>clearsite</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <img src="/assets/icons/up.svg" alt="Up" onerror="this.style.display='none'; this.parentElement.innerHTML='↑';">
+    </button>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
