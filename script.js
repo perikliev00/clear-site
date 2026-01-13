@@ -2306,7 +2306,7 @@
     },
   };
 
-  let currentLang = "en";
+  let currentLang = "bg";
 
   const getByPath = (obj, path) =>
     path.split(".").reduce((acc, k) => (acc && acc[k] !== undefined ? acc[k] : undefined), obj);
@@ -2315,7 +2315,7 @@
     String(str).replace(/\{(\w+)\}/g, (_, k) => (vars[k] !== undefined ? String(vars[k]) : `{${k}}`));
 
   const t = (key, vars) => {
-    const val = getByPath(I18N[currentLang] || I18N.en, key) ?? getByPath(I18N.en, key) ?? key;
+    const val = getByPath(I18N[currentLang] || I18N.bg, key) ?? getByPath(I18N.bg, key) ?? key;
     return format(val, vars);
   };
 
@@ -2337,7 +2337,7 @@
   };
 
   const applyLanguage = (lang) => {
-    if (!LANGS[lang]) lang = "en";
+    if (!LANGS[lang]) lang = "bg";
     currentLang = lang;
 
     const vars = { lang: LANGS[lang].label, company: "ClearSite" };
@@ -2519,7 +2519,7 @@
   if (footerYear) footerYear.textContent = String(new Date().getFullYear());
 
   // Initial language from localStorage
-  applyLanguage(safeStorage.get("lang") || "en");
+  applyLanguage(safeStorage.get("lang") || "bg");
 
   // Language menu behavior (hover via CSS; click toggle for touch)
   const langMenu = document.querySelector("[data-lang-menu]");

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="bg">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="./home.css" />
   </head>
   <body data-page="home">
-    <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="a11y.skip">Пропусни към съдържанието</a>
 
     <header class="site-header" role="banner">
       <div class="topbar">
@@ -40,7 +40,7 @@
 
           <div class="topbar__center">
             <a class="btn btn--outline btn--neutral" href="./contact.html" id="top-cta" data-i18n="cta.free_consult">
-              Request a free consultation
+              Заяви безплатна консултация
             </a>
             <a
               class="btn btn--outline btn--whatsapp"
@@ -55,10 +55,10 @@
           </div>
 
           <nav class="topbar__right" aria-label="Top links" data-i18n-attr="aria-label:a11y.top_links">
-            <a class="toplink" href="./results.html" data-i18n="top.results">Results</a>
-            <a class="toplink" href="./services.html" data-i18n="top.services">Services</a>
-            <a class="toplink" href="./about.html" data-i18n="top.about">About</a>
-            <a class="toplink" href="./contact.html" data-i18n="top.contact">Contact</a>
+            <a class="toplink" href="./results.html" data-i18n="top.results">Резултати</a>
+            <a class="toplink" href="./services.html" data-i18n="top.services">Услуги</a>
+            <a class="toplink" href="./about.html" data-i18n="top.about">За нас</a>
+            <a class="toplink" href="./contact.html" data-i18n="top.contact">Контакт</a>
             <div class="lang-menu" data-lang-menu>
               <button
                 class="lang-menu__trigger"
@@ -72,16 +72,14 @@
                 <span class="lang__flag" aria-hidden="true">
                   <span data-lang-flag>
                     <svg width="18" height="12" viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="18" height="12" rx="2" fill="#012169" />
-                      <path d="M0 0 L18 12 M18 0 L0 12" stroke="#FFFFFF" stroke-width="2.4" />
-                      <path d="M0 0 L18 12 M18 0 L0 12" stroke="#C8102E" stroke-width="1.2" />
-                      <path d="M9 0 V12 M0 6 H18" stroke="#FFFFFF" stroke-width="3.2" />
-                      <path d="M9 0 V12 M0 6 H18" stroke="#C8102E" stroke-width="1.8" />
+                      <rect width="18" height="12" rx="2" fill="#fff" />
+                      <rect y="4" width="18" height="4" fill="#00966E" />
+                      <rect y="8" width="18" height="4" fill="#D62612" />
                       <rect width="18" height="12" rx="2" fill="none" stroke="rgba(0,0,0,.12)" />
                     </svg>
                   </span>
                 </span>
-                <span class="lang__text" data-lang-current>English</span>
+                <span class="lang__text" data-lang-current>Български</span>
                 <span class="lang__chev" aria-hidden="true">▾</span>
               </button>
 
@@ -93,7 +91,7 @@
                 data-i18n-attr="aria-label:a11y.language_select"
               >
                 <li>
-                  <button type="button" class="lang-menu__option" role="option" aria-selected="true" data-lang="en">
+                  <button type="button" class="lang-menu__option" role="option" aria-selected="false" data-lang="en">
                     <span class="lang-menu__flag" aria-hidden="true">
                       <svg width="18" height="12" viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg">
                         <rect width="18" height="12" rx="2" fill="#012169" />
@@ -112,7 +110,7 @@
                     type="button"
                     class="lang-menu__option"
                     role="option"
-                    aria-selected="false"
+                    aria-selected="true"
                     data-lang="bg"
                   >
                     <span class="lang-menu__flag" aria-hidden="true">
@@ -213,21 +211,17 @@
         <div class="container hero__inner">
           <div class="hero__copy">
             <h1 id="hero-title" class="hero__title" data-i18n-html="hero.title_html">
-              Websites that turn visitors<br />
-              into customers
+              Уебсайтове, които превръщат посетителите<br />
+              в клиенти
             </h1>
             <p class="hero__desc" data-i18n="hero.desc">
-              Your website is not just a design — it is a business tool. I build fast, clear and
-              conversion-focused websites that help businesses attract clients, build trust and grow
-              online. Most websites look good but do not generate results. I focus on structure,
-              clarity and user experience so your website works for you — 24/7 — bringing inquiries,
-              calls and real business opportunities.
+              Изработвам фирмен сайт, лендинг страница, онлайн магазин или система за резервации. Фокусът е върху ясна структура, UX, скорост, SEO основи и конверсия — за да разберат посетителите офертата ви и да направят следващата стъпка (запитване, обаждане, покупка).
             </p>
 
             <div class="hero__cta">
-              <div class="hero__label" data-i18n="cta.free_consult">Request a free consultation</div>
+              <div class="hero__label" data-i18n="cta.free_consult">Заяви безплатна консултация</div>
               <a class="btn btn--outline btn--pink" href="./contact.html" id="hero-cta">
-                <span data-i18n="hero.cta">Get a website for your business</span>
+                <span data-i18n="hero.cta">Заяви безплатна консултация</span>
                 <span class="btn__icon" aria-hidden="true">
                   <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -447,17 +441,15 @@
       <section class="services" aria-labelledby="services-title">
         <div class="container services__inner">
           <div class="services__left">
-            <h2 id="services-title" class="services__title" data-i18n="services.title">Website services explained</h2>
+            <h2 id="services-title" class="services__title" data-i18n="services.title">Уеб услуги — обяснени</h2>
             <div class="services__underline" aria-hidden="true"></div>
             <p class="services__lead" data-i18n="services.lead">
-              Every business needs a website that works, not just one that looks good. Here is how
-              each part of the website is designed to help you attract clients, build trust and grow
-              online.
+              Всеки бизнес има нужда от сайт, който работи — не само изглежда добре. Ето как всяка част е създадена, за да привлича клиенти, да изгражда доверие и да подпомага растежа.
             </p>
           </div>
 
           <div class="services__right">
-            <div class="services__eyebrow" data-i18n="services.eyebrow">EXPLORE WEBSITE SERVICE OPTIONS</div>
+            <div class="services__eyebrow" data-i18n="services.eyebrow">РАЗГЛЕДАЙ ОПЦИИТЕ ЗА УЕБ УСЛУГИ</div>
 
             <div class="tabs" data-tabs>
               <div class="tabs__list" role="tablist" aria-label="Services" data-i18n-attr="aria-label:services.tablist">
@@ -834,10 +826,9 @@
 
       <section class="provider" aria-labelledby="provider-title">
         <div class="container">
-          <h2 id="provider-title" class="provider__title" data-i18n="provider.title">A website partner you can trust</h2>
+          <h2 id="provider-title" class="provider__title" data-i18n="provider.title">Партньор за уебсайт, на когото можеш да разчиташ</h2>
           <p class="provider__subtitle" data-i18n="provider.subtitle">
-            I build websites that help businesses look professional, earn trust and generate real
-            inquiries — so you can focus on running your business.
+            Изработвам уебсайтове, които помагат на бизнесите да изглеждат професионално, да печелят доверие и да генерират реални запитвания — за да можеш да се фокусираш върху управлението на бизнеса си.
           </p>
 
           <div class="provider__grid">
@@ -891,10 +882,9 @@
                   <path class="cls-1" d="M35.751,38.763a.5.5,0,0,0,.707,0l4.124-4.124a.5.5,0,0,0-.707-.707L36.1,37.7,34.272,35.87a.5.5,0,0,0-.707.707Z"/>
                 </svg>
               </div>
-              <h3 class="provider__card-title" data-i18n="provider.card2.title">Simple and transparent process</h3>
+              <h3 class="provider__card-title" data-i18n="provider.card2.title">Прост и прозрачен процес</h3>
               <p class="provider__card-text" data-i18n="provider.card2.desc">
-                You always know what is being built and why. No unnecessary complexity, no
-                confusion — just a clear process and visible progress.
+                Винаги знаеш какво се изработва и защо. Без излишна сложност — само ясен процес и видим напредък.
               </p>
             </article>
 
@@ -919,10 +909,9 @@
                   />
                 </svg>
               </div>
-              <h3 class="provider__card-title" data-i18n="provider.card3.title">Built to support business growth</h3>
+              <h3 class="provider__card-title" data-i18n="provider.card3.title">Създаден за бизнес растеж</h3>
               <p class="provider__card-text" data-i18n="provider.card3.desc">
-                Your website is designed to help visitors understand your offer and take action.
-                The goal is not traffic — the goal is real inquiries and clients.
+                Сайтът е проектиран така, че посетителите да разберат офертата и да предприемат действие. Целта не е трафик — целта са реални запитвания и клиенти.
               </p>
             </article>
 
@@ -958,10 +947,9 @@
                   </g>
                 </svg>
               </div>
-              <h3 class="provider__card-title" data-i18n="provider.card4.title">Everything your business needs in one place</h3>
+              <h3 class="provider__card-title" data-i18n="provider.card4.title">Всичко нужно на едно място</h3>
               <p class="provider__card-text" data-i18n="provider.card4.desc">
-                Design, structure and functionality are combined into one complete solution. You
-                get a professional website without managing multiple people or tools.
+                Дизайн, структура и функционалност в едно цялостно решение. Професионален сайт без да управляваш много хора или инструменти.
               </p>
             </article>
           </div>
@@ -970,7 +958,7 @@
 
       <section class="why" aria-labelledby="why-title">
         <div class="container">
-          <h2 id="why-title" class="why__title" data-i18n="why.title">Why choose this website service?</h2>
+          <h2 id="why-title" class="why__title" data-i18n="why.title">Защо да избереш тази уеб услуга?</h2>
 
           <div class="why__grid">
             <article class="why__item">
@@ -1040,10 +1028,9 @@
                   </g>
                 </svg>
               </div>
-              <h3 class="why__item-title" data-i18n="why.item1.title">Focused on business results</h3>
+              <h3 class="why__item-title" data-i18n="why.item1.title">Фокус върху резултати</h3>
               <p class="why__item-text" data-i18n="why.item1.desc">
-                Every website is built with a clear purpose — to help your business attract
-                clients, communicate clearly and build trust online.
+                Всеки сайт има ясна цел — да помогне на бизнеса да привлича клиенти, да комуникира ясно и да изгражда доверие онлайн.
               </p>
             </article>
 
@@ -1070,10 +1057,9 @@
                   </g>
                 </svg>
               </div>
-              <h3 class="why__item-title" data-i18n="why.item2.title">Modern, proven approach</h3>
+              <h3 class="why__item-title" data-i18n="why.item2.title">Модерен и доказан подход</h3>
               <p class="why__item-text" data-i18n-html="why.item2.desc_html">
-                I use modern, reliable web practices to ensure your website is <strong>fast, clear
-                and easy to use</strong> — today and in the future.
+                Използвам надеждни практики, за да бъде сайтът <strong>бърз, ясен и лесен за използване</strong> — днес и в бъдеще.
               </p>
             </article>
 
@@ -1089,10 +1075,9 @@
                   </g>
                 </svg>
               </div>
-              <h3 class="why__item-title" data-i18n="why.item3.title">Simple and flexible solutions</h3>
+              <h3 class="why__item-title" data-i18n="why.item3.title">Прости и гъвкави решения</h3>
               <p class="why__item-text" data-i18n="why.item3.desc">
-                You get exactly what your business needs — no unnecessary complexity. The solution
-                is tailored to your goals, size and type of business.
+                Получаваш точно това, от което бизнесът има нужда — без излишна сложност. Решението е съобразено с целите, размера и типа бизнес.
               </p>
             </article>
           </div>
@@ -1115,20 +1100,19 @@
               <span class="brand__mark" aria-hidden="true">clearsite</span>
             </a>
             <p class="footer__blurb" data-i18n="footer.blurb">
-              ClearSite creates modern, fast, and professional websites designed to help businesses
-              attract more clients, build trust online, and grow.
+              ClearSite създава модерни, бързи и професионални уебсайтове, които помагат на бизнесите да привличат повече клиенти, да изграждат доверие онлайн и да растат.
             </p>
           </div>
 
           <div class="footer__grid" aria-label="Footer links" data-i18n-attr="aria-label:a11y.footer_links">
             <div class="footer__col">
-              <h3 class="footer__heading" data-i18n="footer.col.pages">Pages</h3>
+              <h3 class="footer__heading" data-i18n="footer.col.pages">Страници</h3>
               <ul class="footer__list">
-                <li><a href="./index.html" data-i18n="footer.link.home">Home</a></li>
-                <li><a href="./results.html" data-i18n="footer.link.results">Results</a></li>
-                <li><a href="./about.html" data-i18n="footer.link.about">About</a></li>
-                <li><a href="./services.html" data-i18n="footer.link.services">Services</a></li>
-                <li><a href="./contact.html" data-i18n="footer.link.contact">Contact</a></li>
+                <li><a href="./index.html" data-i18n="footer.link.home">Начало</a></li>
+                <li><a href="./results.html" data-i18n="footer.link.results">Резултати</a></li>
+                <li><a href="./about.html" data-i18n="footer.link.about">За нас</a></li>
+                <li><a href="./services.html" data-i18n="footer.link.services">Услуги</a></li>
+                <li><a href="./contact.html" data-i18n="footer.link.contact">Контакт</a></li>
                 <li>
                   <a
                     href="https://wa.me/359893813214"
@@ -1150,7 +1134,7 @@
           <div class="footer__copy">
             <span data-i18n="footer.copy_prefix">©</span> <span id="footer-year"></span>
             <span data-i18n="footer.company">ClearSite</span>.
-            <span data-i18n="footer.rights">All rights reserved.</span>
+            <span data-i18n="footer.rights">Всички права запазени.</span>
           </div>
         </div>
       </div>
@@ -1163,7 +1147,7 @@
       aria-label="Request a free consultation"
       data-i18n-attr="aria-label:cta.free_consult"
     >
-      <span data-i18n="cta.free_consult">Request a free consultation</span>
+      <span data-i18n="cta.free_consult">Заяви безплатна консултация</span>
       <span class="sticky-cta__icon" aria-hidden="true">
         <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path
